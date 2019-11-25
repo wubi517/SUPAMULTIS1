@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#071e3d</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#64DD17</color>
+    <color name="windowBackground">#101010</color>
+    <color name="menuBackground">#020202</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#2962FF</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+
+    <color name="epg_background">#ff1e1e1e</color>
+    <color name="epg_channel_layout_background">#ff323232</color>
+    <color name="epg_event_layout_background">#ff4f4f4f</color>
+    <color name="epg_event_layout_background_current">#ff3b3b3b</color>
+    <color name="epg_event_layout_text">#ffd6d6d6</color>
+    <color name="epg_time_bar">#ffc57120</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#736f6f</color>
+    <color name="red">#DE0303</color>
+    <color name="welcome_color">#eda804</color>
+    <color name="trans_parent">#00000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="epg_event_layout_background_selected">#010630</color>
+    <color name="channel_color">#18477f</color>
+    <color name="land_bg_color">#121212</color>
+    <color name="epg_title">#a1b8e0</color>
+    <color name="homescreen_textcolor">#FFFFFF</color>
+    <color name="settings_popup_color">#2D2D2D</color>
+    <color name="settings_popup_selected_color">#1F4588</color>
+    <color name="channel_cat_focus_color">#9511a2f7</color>
+    <color name="channel_pressed_color">#4F63D2</color>
+    <color name="colorGreen">#ff8ecc50</color>
+    
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+    <color name="ijk_transparent_dark">#77000000</color>
+</resources>

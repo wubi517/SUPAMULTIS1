@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        tools:context=".ui.series.FragmentSeasons">
+        
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/movies_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#10ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"/>
+        
+        <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/movies_recyclerview"
+                app:layout_constraintBottom_toTopOf="@+id/guideline1"/>
+        
+        <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/slider_bottom_fade"
+                app:layout_constraintStart_toStartOf="@+id/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/image"
+                app:layout_constraintTop_toTopOf="@+id/image"
+                android:id="@+id/frameLayout">
+                
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/white"
+                        android:maxLines="1"
+                        android:textSize="24sp"/>
+        </FrameLayout>
+        
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/video_list_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                app:layout_constraintStart_toEndOf="@+id/movies_recyclerview"/>
+        
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline1"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

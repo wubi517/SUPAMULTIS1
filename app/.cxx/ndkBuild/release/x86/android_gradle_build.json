@@ -1,0 +1,34 @@
+{
+  "buildFiles": [
+    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk",
+    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "notifications-release-x86": {
+      "buildCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib E:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj/local/x86/libnotifications.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "notifications",
+      "files": [
+        {
+          "src": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\notifications.c",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/AndroidSdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fPIC -O2 -DNDEBUG -IE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/src/main/jni -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security -mstackrealign"
+        }
+      ],
+      "output": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86\\libnotifications.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cCompilerExecutable": "D:\\AndroidSdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

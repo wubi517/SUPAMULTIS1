@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.google.android.material.appbar.AppBarLayout
+            android:fitsSystemWindows="false"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rootview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/menu_layout"/>
+    
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:minWidth="30dp"
+                android:background="@color/menuBackground"
+                android:id="@+id/menu_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4">
+        
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+    
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:id="@+id/app_name"/>
+            
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="Tv"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/colorAccent"/>
+                
+            </LinearLayout>
+        
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/menu_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+        </LinearLayout>
+        
+        <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/ly_vpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            
+            <ImageView
+                    android:id="@+id/image_vpn"
+                    android:layout_margin="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/green"/>
+            
+            <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/image_vpn"
+                    android:textColor="@color/white"
+                    android:text="VPN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            
+        </RelativeLayout>
+    
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.14"/>
+    
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

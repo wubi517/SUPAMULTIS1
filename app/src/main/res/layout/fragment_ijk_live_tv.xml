@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootview"
+        tools:context=".ui.liveTv.FragmentLiveTv">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" 
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/guideline1"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.2"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" 
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/guideline2"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.4"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" 
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/guideline3"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.6"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#10ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline1"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subcategory_recyclerview"
+            android:layout_width="0dp"
+            android:background="#20ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@+id/guideline1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:id="@+id/toast_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_marginStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    
+    <TableLayout
+            android:visibility="gone"
+            android:id="@+id/hud_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ijk_transparent_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="0dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <com.it_tech613.tvmulti.ijklib.widget.media.IjkVideoView
+            android:background="@color/black"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            android:id="@+id/surface_view">
+    </com.it_tech613.tvmulti.ijklib.widget.media.IjkVideoView>
+    
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:id="@+id/programs_recyclerview"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="8dp"/>
+    <ImageView
+            android:src="@drawable/sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mute"
+            android:tint="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+    
+    <Button
+            android:text="@string/add_to_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:textAllCaps="false"
+            android:focusable="true"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp">
+        <requestFocus/>
+    </Button>
+    
+    <ImageView
+            android:id="@+id/fav_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart_filled"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="@+id/button4"
+            app:layout_constraintBottom_toBottomOf="@+id/button4"/>
+    
+    <LinearLayout
+            android:id="@+id/ly_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/round_blue"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        
+        <LinearLayout
+                android:id="@+id/ly_info"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="5sp">
+            
+            <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                
+                <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cheap"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                
+                <TextView
+                        android:id="@+id/txt_dec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="this is test description"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10sp"
+                    android:padding="5sp">
+                
+                <ImageView
+                        android:id="@+id/channel_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+            </LinearLayout>
+        
+        </LinearLayout>
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/title_bg"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp">
+                
+                <TextView
+                        android:id="@+id/txt_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="155 Testing Channel"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                
+                <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="12:30 PM Mon 07/12"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp">
+                    
+                    <TextView
+                            android:id="@+id/txt_time_passed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Started 50min ago"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    
+                    <SeekBar
+                            android:id="@+id/seekbar"
+                            android:layout_width="200sp"
+                            android:layout_height="5sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5sp"
+                            android:focusable="false"
+                            android:progressDrawable="@drawable/seekbar_draw"
+                            android:thumb="@android:color/transparent" />
+                    
+                    <TextView
+                            android:id="@+id/txt_remain_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5sp"
+                            android:text="+30min"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    
+                    <TextView
+                            android:id="@+id/txt_last_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10sp"
+                            android:text="01:30 AM"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    
+                    <ImageView
+                            android:id="@+id/image_clock"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15sp"
+                            android:src="@drawable/clock" />
+                    
+                    <ImageView
+                            android:id="@+id/image_star"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5sp"
+                            android:src="@drawable/star_white" />
+                </LinearLayout>
+                
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp">
+                    
+                    <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/yellow_bg"
+                            android:paddingLeft="10sp">
+                        
+                        <TextView
+                                android:id="@+id/txt_current_dec"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="This is current Dec"
+                                android:textColor="@color/epg_event_layout_background_selected"
+                                android:textSize="15sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5sp"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/title_bg"
+                            android:paddingLeft="5sp">
+                        
+                        <TextView
+                                android:id="@+id/txt_next_dec"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="This is next Dec"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                    </LinearLayout>
+                    
+                    <RelativeLayout
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                        
+                        <LinearLayout
+                                android:id="@+id/ly_resolution"
+                                android:layout_width="36sp"
+                                android:layout_height="36sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center">
+                            
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_switch" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                                android:id="@+id/ly_audio"
+                                android:layout_width="36sp"
+                                android:layout_height="36sp"
+                                android:layout_gravity="center"
+                                android:layout_toLeftOf="@+id/ly_resolution">
+                            
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_music" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                                android:id="@+id/ly_subtitle"
+                                android:layout_width="36sp"
+                                android:layout_height="36sp"
+                                android:layout_gravity="center"
+                                android:layout_toLeftOf="@+id/ly_audio">
+                            
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_subtitle" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                                android:id="@+id/ly_fav"
+                                android:layout_width="36sp"
+                                android:layout_height="36sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3sp"
+                                android:layout_toLeftOf="@+id/ly_subtitle">
+                            
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_star1" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                                android:id="@+id/ly_tv_schedule"
+                                android:layout_width="36sp"
+                                android:layout_height="36sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3sp"
+                                android:layout_toLeftOf="@+id/ly_fav">
+                            
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/schedule" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/lay_header"
+            android:layout_marginTop="15sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/remote_subtitles_surface"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        
+        <View android:layout_width="match_parent"
+              android:layout_height="35sp"
+              android:layout_toEndOf="@id/image_icon"
+              android:layout_alignParentEnd="true"
+              android:background="@color/black"/>
+        
+        <TextView
+                android:textSize="25sp"
+                android:id="@+id/txt_rss"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"/>
+        <ImageView
+                android:id="@+id/image_icon"
+                android:background="@color/black"
+                android:paddingStart="5sp"
+                android:layout_width="50sp"
+                android:layout_height="35sp"
+                tools:ignore="RtlSymmetry"/>
+    
+    
+    </RelativeLayout>
+    
+    <TextView
+            android:text="My Love"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/channel_name"
+            app:layout_constraintTop_toTopOf="@+id/fav_icon" app:layout_constraintBottom_toBottomOf="@+id/fav_icon"
+            app:layout_constraintEnd_toStartOf="@+id/fav_icon" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" android:layout_marginStart="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

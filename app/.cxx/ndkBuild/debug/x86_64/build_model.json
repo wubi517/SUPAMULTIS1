@@ -1,0 +1,59 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1",
+      "sdkFolder": "D:\\AndroidSdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app",
+      "makeFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\.cxx",
+      "cxxFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx",
+      "ndkFolder": "D:\\AndroidSdk\\ndk-bundle",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "objFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
+    "jsonFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug",
+    "gradleBuildOutputFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64",
+  "jsonFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64",
+  "buildCommandFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\.cxx\\ndkBuild\\debug\\x86_64\\compile_commands.json"
+}

@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk",
+    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "notifications-release-armeabi-v7a": {
+      "artifactName": "notifications",
+      "buildCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\lib E:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libnotifications.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libnotifications.so"
+    }
+  }
+}

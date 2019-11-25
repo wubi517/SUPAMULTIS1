@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/black"
+       android:paddingLeft="30.0dip"
+       android:paddingRight="30.0dip">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/tv_status"/>
+    
+    <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Disconnected"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"/>
+    
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/btn_connect">
+        
+        <EditText
+                android:visibility="gone"
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundwhite"
+                android:hint="IP"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff555e5e"
+                android:textColorHint="#ff555e5e"
+                android:imeOptions="actionNext"
+                android:textSize="18.0sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="181dp" />
+        
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundwhite"
+                android:hint="Username"
+                android:padding="10.0sp"
+                android:textColor="#ff555e5e"
+                android:imeOptions="actionNext"
+                android:textColorHint="#ff555e5e"
+                android:textSize="18.0sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="235dp"/>
+    
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundwhite"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10.0dip"
+                android:textColor="#ff555e5e"
+                android:textColorHint="#ff555e5e"
+                android:textSize="18.0sp"
+                android:imeOptions="actionDone"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="288dp"/>
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="CONNECT"
+            android:textColor="@color/white"
+            android:textSize="20.0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

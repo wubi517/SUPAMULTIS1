@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Live Tv"
+          android:id="@+id/action_tv_guide"/>
+    <item android:title="Movies"
+          android:id="@+id/action_sports"/>
+    <item android:title="Series"
+          android:id="@+id/action_catch_up"/>
+    <item android:title="Tv Guide"
+          android:id="@+id/action_sky_cinema"/>
+    <item android:title="Catchup"
+          android:id="@+id/action_sky_box"/>
+    <item android:title="Settings"
+          android:id="@+id/action_Settings"/>
+</menu>
