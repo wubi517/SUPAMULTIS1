@@ -764,7 +764,7 @@ public class LiveExoPlayActivity extends AppCompatActivity implements  SeekBar.O
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         try {
-            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (event.getAction() == KeyEvent.ACTION_UP) {
                 switch (event.getKeyCode()) {
                     case KeyEvent.KEYCODE_DPAD_CENTER:
                         if (ly_bottom.getVisibility() == View.GONE){

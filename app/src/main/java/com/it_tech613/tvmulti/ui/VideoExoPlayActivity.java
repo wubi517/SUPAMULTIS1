@@ -631,7 +631,7 @@ public class VideoExoPlayActivity extends AppCompatActivity implements  SeekBar.
         try {
             long curr_pos = player.getContentPosition();
             long max_pos = player.getDuration();
-            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (event.getAction() == KeyEvent.ACTION_UP) {
                 switch (event.getKeyCode()) {
                     case KeyEvent.KEYCODE_DPAD_CENTER:
                         if (player.getPlayWhenReady()) {

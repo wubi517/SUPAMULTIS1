@@ -42,13 +42,14 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.it_tech613.tvmulti.apps.MyApp.num_server;
+
 public class InitializeActivity extends Activity implements View.OnClickListener {
 
     SharedPreferences serveripdetails;
     String version,app_Url;
     private MyVideoView videoView;
     private boolean is_video_played = false;
-    int num_server = 3;
     static {
         System.loadLibrary("notifications");
     }

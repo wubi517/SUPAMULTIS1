@@ -35,6 +35,7 @@ import java.util.Locale;
 import java.util.Map;
 
 public class MyApp extends Application {
+    public static int num_server = 3;
     public static boolean is_announce_enabled = true;
     public static SeasonModel selectedSeasonModel;
     public static EPGChannel selectedChannel;

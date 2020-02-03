@@ -85,8 +85,10 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             new Thread(this::callLogin).start();
         }
         if (BuildConfig.DEBUG){
-            name_txt.setText("Franco62");
-            pass_txt.setText("62Franco");
+            name_txt.setText("letsgochamp");
+            pass_txt.setText("Ou5Z9qcN8z");
+//            name_txt.setText("Franco62");
+//            pass_txt.setText("62Franco");
         }
 
         TextView mac_txt = findViewById(R.id.login_mac_address);
@@ -175,16 +177,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callLogin()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN UNSUCCESSFUL PLEASE CHECK YOUR LOGIN DETAILS OR CONTACT YOUR PROVIDER");
+                },"LOGIN UNSUCCESSFUL PLEASE CHECK YOUR LOGIN DETAILS OR CONTACT YOUR PROVIDER",null, null);
                 connectionDlg.show();
             });
         }
@@ -220,16 +222,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callVodCategory()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }
@@ -300,16 +302,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callLiveCategory()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }
@@ -343,16 +345,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callSeriesCategory()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }
@@ -499,16 +501,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callLiveStreams()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }
@@ -559,16 +561,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callSeries()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }
@@ -636,16 +638,16 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
             runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(LoginActivity.this, new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callMovieStreams()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(LoginActivity.this, ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }

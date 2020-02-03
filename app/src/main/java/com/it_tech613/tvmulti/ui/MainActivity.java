@@ -2,6 +2,7 @@ package com.it_tech613.tvmulti.ui;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -293,6 +294,38 @@ public class MainActivity extends AppCompatActivity {
                 if (myFragment.isVisible()) {
                     if (!myFragment.myOnKeyDown(event)) return false;
                 }
+//            if (event.getKeyCode()==KeyEvent.KEYCODE_BACK){
+//                String string, string1, string2;
+//                if (MyApp.num_server==1){
+//                    string = "DO YOU WISH TO EXIT APP?";
+//                    string1 = "Yes";
+//                    string2 = "No";
+//                }else {
+//                    string = "DO YOU WISH TO EXIT APP OR SWITCH SERVER?";
+//                    string1 = "EXIT";
+//                    string2 = "SWITCH SERVER";
+//                }
+//                ConnectionDlg connectionDlg = new ConnectionDlg(MainActivity.this, new ConnectionDlg.DialogConnectionListener() {
+//                    @Override
+//                    public void OnYesClick(Dialog dialog) {
+//                        dialog.dismiss();
+//                        stopVPN();
+//                        finish();
+//                    }
+//
+//                    @Override
+//                    public void OnNoClick(Dialog dialog) {
+//                        dialog.dismiss();
+//                        if (MyApp.num_server!=1) {
+//                            startActivity(new Intent(MainActivity.this, InitializeActivity.class));
+//                            stopVPN();
+//                            finish();
+//                        }
+//                    }
+//                }, string,string1, string2);
+//                connectionDlg.show();
+//                return false;
+//            }
         }
         return super.dispatchKeyEvent(event);
     }

@@ -436,7 +436,7 @@ public class VideoIjkPlayActivity extends AppCompatActivity implements  SeekBar.
         try {
             long curr_pos = surfaceView.getCurrentPosition();
             long max_pos = surfaceView.getDuration();
-            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (event.getAction() == KeyEvent.ACTION_UP) {
                 switch (event.getKeyCode()) {
                     case KeyEvent.KEYCODE_DPAD_CENTER:
                         if (surfaceView.isPlaying()) {

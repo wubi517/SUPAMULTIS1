@@ -794,7 +794,7 @@ public class VideoPlayActivity extends AppCompatActivity implements  SeekBar.OnS
         try {
             long curr_pos = mMediaPlayer.getTime();
             long max_pos = mMediaPlayer.getLength();
-            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (event.getAction() == KeyEvent.ACTION_UP) {
                 switch (event.getKeyCode()) {
                     case KeyEvent.KEYCODE_DPAD_CENTER:
                         if (mMediaPlayer.isPlaying()) {

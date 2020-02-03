@@ -265,16 +265,16 @@ public class FragmentTvGuide extends MyFragment implements IVLCVout.Callback, Su
             requireActivity().runOnUiThread(() -> {
                 ConnectionDlg connectionDlg = new ConnectionDlg(requireContext(), new ConnectionDlg.DialogConnectionListener() {
                     @Override
-                    public void OnRetryClick(Dialog dialog) {
+                    public void OnYesClick(Dialog dialog) {
                         dialog.dismiss();
                         new Thread(() -> callAllEpg()).start();
                     }
 
                     @Override
-                    public void OnHelpClick(Dialog dialog) {
+                    public void OnNoClick(Dialog dialog) {
                         startActivity(new Intent(requireContext(), ConnectionErrorActivity.class));
                     }
-                },"LOGIN SUCCESSFUL LOADING DATA");
+                },"LOGIN SUCCESSFUL LOADING DATA",null, null);
                 connectionDlg.show();
             });
         }

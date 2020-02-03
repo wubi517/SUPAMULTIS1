@@ -1,30 +1,30 @@
 {
   "buildFiles": [
-    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk",
-    "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk"
+    "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk",
+    "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Application.mk"
   ],
   "cleanCommands": [
-    "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+    "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/lib clean"
   ],
-  "buildTargetsCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/lib {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "notifications-debug-x86": {
-      "buildCommand": "D:\\AndroidSdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dE:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\lib E:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj/local/x86/libnotifications.so",
+      "buildCommand": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/lib /Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj/local/x86/libnotifications.so",
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "notifications",
       "files": [
         {
-          "src": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\src\\main\\jni\\notifications.c",
-          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/AndroidSdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fPIC -O0 -UNDEBUG -fno-limit-debug-info -IE:/KDSIPTV/EnglandNewUi/SUPAMULTIS1/app/src/main/jni -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security -mstackrealign"
+          "src": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/notifications.c",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni -DANDROID -Wformat -Werror\u003dformat-security -mstackrealign"
         }
       ],
-      "output": "E:\\KDSIPTV\\EnglandNewUi\\SUPAMULTIS1\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libnotifications.so"
+      "output": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj/local/x86/libnotifications.so"
     }
   },
   "toolchains": {
     "toolchain-x86": {
-      "cCompilerExecutable": "D:\\AndroidSdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+      "cCompilerExecutable": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
     }
   },
   "cFileExtensions": [
