@@ -5,7 +5,6 @@
       "sdkFolder": "/Volumes/Data/AndroidSdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "armeabi-v7a,armeabi",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates",
       "gradleModulePathName": ":app",
@@ -40,7 +39,9 @@
     "gradleBuildOutputFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/cxx/debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "ARMEABI_V7A"
+      "ARMEABI_V7A",
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": []
   },

@@ -1,59 +1,122 @@
 {
+  "abi": "X86",
+  "abiPlatformVersion": 21,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cxxBuildFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86",
   "variant": {
+    "buildSystemArgumentList": [],
+    "buildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [],
+    "isDebuggableEnabled": true,
     "module": {
-      "rootBuildGradleFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1",
-      "sdkFolder": "/Volumes/Data/AndroidSdk",
-      "isNativeCompilerSettingsCacheEnabled": false,
-      "isBuildOnlyTargetAbiEnabled": true,
-      "splitsAbiFilterSet": [],
-      "intermediatesFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates",
-      "gradleModulePathName": ":app",
-      "moduleRootFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app",
-      "makeFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk",
       "buildSystem": "NDK_BUILD",
-      "compilerSettingsCacheFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/.cxx",
+      "cmakeToolchainFile": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
       "cxxFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx",
-      "ndkFolder": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669",
-      "ndkVersion": "21.0.6113669",
-      "ndkSupportedAbiList": [
-        "ARMEABI_V7A",
-        "ARM64_V8A",
-        "X86",
-        "X86_64"
-      ],
+      "gradleModulePathName": ":app",
+      "intermediatesFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates",
+      "makeFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/src/main/jni/Android.mk",
+      "moduleBuildFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build.gradle",
+      "moduleRootFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "cmakeToolchainFile": "."
+      "ndkFolder": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 29,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29
+        }
+      },
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkVersion": "21.0.6113669",
+      "project": {
+        "compilerSettingsCacheFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/.cxx",
+        "cxxFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/.cxx",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1",
+        "sdkFolder": "/Volumes/Data/AndroidSdk"
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Volumes/Data/AndroidSdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      }
     },
-    "buildSystemArgumentList": [],
-    "cFlagList": [],
-    "cppFlagsList": [],
-    "variantName": "debug",
-    "soFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/lib",
     "objFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj/local",
-    "jsonFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug",
-    "gradleBuildOutputFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/cxx/debug",
-    "isDebuggableEnabled": true,
+    "variantName": "debug",
     "validAbiList": [
       "ARMEABI_V7A",
       "X86",
       "X86_64"
-    ],
-    "buildTargetSet": []
-  },
-  "abi": "X86",
-  "abiPlatformVersion": 21,
-  "cxxBuildFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86",
-  "jsonFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/android_gradle_build.json",
-  "gradleBuildOutputFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/cxx/debug/x86",
-  "objFolder": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/build/intermediates/ndkBuild/debug/obj/local/x86",
-  "buildCommandFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/build_command.txt",
-  "buildOutputFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/build_output.txt",
-  "modelOutputFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/build_model.json",
-  "jsonGenerationLoggingRecordFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/json_generation_record.json",
-  "compileCommandsJsonFile": "/Volumes/Data/Work/IPTV/SUPAMULTIS1/app/.cxx/ndkBuild/debug/x86/compile_commands.json"
+    ]
+  }
 }

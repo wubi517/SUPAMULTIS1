@@ -23,7 +23,7 @@ class FragmentSeriesHolder : MyFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val fragment = (requireActivity() as MainActivity).fragmentList.get((requireActivity() as MainActivity).fragmentList.size-5) as FragmentSeasons
+        val fragment = (requireActivity() as MainActivity).fragmentList[(requireActivity() as MainActivity).fragmentList.size-5] as FragmentSeasons
         fragment.parent = this
         replaceFragment(fragment)
     }
